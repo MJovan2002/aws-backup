@@ -1,0 +1,16 @@
+[package]
+name = "aws-backup"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-sdk-s3 = "0.24.0"
+aws-config = "0.54.1"
+tokio = { version = "1.26.0", features = ["full"] }
+uuid = { version = "1.3.0", features = ["v4"] }
+clap = { version = "4.1.13", features = ["derive"] }
+walkdir = "2.3.3"
+tempfile = { version = "3.4.0", features = ["nightly"] }
+zip = "0.6.4"
